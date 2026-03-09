@@ -24,29 +24,13 @@ Claude Code is capable of implementing passkey authentication flows using the Pa
 
 A prompt for implementing a passkey-based wallet might be as simple as this:
 
-
-Copy
+```
 Create a web-based wallet with stellar soroban using passkeys for authorization
+```
+
 This will typically generate a Next.js app with all the necessary components and logic for creating a passkey-based wallet, registering passkeys, and sending and receiving XLM.
 
-Potential issues
-Invalid domain error - this issue is typically caused by the relying party ID (rpId) not matching the domain of the website. If the dapp is running locally, changing the browser UR from 127.0.0.1 to localhost may resolve the issue
-
-FEE_PAYER_SECRET not configured in .env.local - the Passkey Kit requires a fee payer account to deploy the wallet contract and submit transactions. Resolve by either providing the secret key of a fee payer account in the .env.local file, or by prompt Claude Code to resolve the issue by creating a new fee payer account and configuring the environment variable.
-
-Missing Trustline - Either manually add a trustline to the wallet for the asset you want to use, or prompt Claude Code to add the functionality for adding trustlines to the wallet.
-
-
-
-
-
-
-
-
-
-
-
-
+See the Build Report below.
 
 # Stellar Passkey Wallet — Build Report
 
